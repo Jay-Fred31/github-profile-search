@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="authour" content="Joyce Fred" />
+    <meta
+      name="description"
+      content="This app show a card for displaying searched people from github"
+    />
+    <meta property="og:site_name" content="Github Profile" />
+    <meta property="og:title" content="Card Github Profile" />
+    <meta
+      property="og:description"
+      content="An app to view searched github profile"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@200;400;600&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" defer></script>
+    <title>Card Github Profile</title>
+  </head>
+  <body>
+    <main>
+      <section class="header">
+        <h1 class="header-text">devfinder</h1>
+        <div>
+          <h3 class="mode">
+            LIGHT
+             <span><i class="fa-solid fa-sun"></i></span>
+          </h3>
+        </div>
+      </section>
+      <section class="profile-content">
+        <div class="search-bar" id="search-bar">
+          <input
+            id="search-input"
+            type="text"
+            placeholder="search Github username..."
+          />
+          <i class="fa-solid fa-magnifying-glass search-icon float"></i>
+        <button id="search" class="btn float">search</button>
+        </div>
+        
+        <section class="card">
+          <article class="card-profile">
+            <img id="profile-image" src="./cool_cat.jpg" alt="A cool cat" />
+            <div>
+              <h3 id="profile-name">The Octocat</h3>
+              <p id="handle">@octocat</p>
+              <p id="join-date">Joined 25 Jan 2011</p>
+            </div>
+          </article>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui esse,
+            repudiandae eos dicta eaque velit voluptate. Magni vitae eaque
+            quasi.
+          </p>
+          <div class="card-rating">
+            <div>
+              <p class="card-rating__social">Repos</p>
+              <span id="repo" class="value">8</span>
+            </div>
+            <div>
+              <p class="card-rating__social">Followers</p>
+              <span id="followers" class="value">3938</span>
+            </div>
+            <div>
+              <p class="card-rating__social">Following</p>
+              <span id="following" class="value">9</span>
+            </div>
+          </div>
+          <div class="card-socials">
+            <div class="location">
+              <i class="fa-solid fa-location-dot social"></i>
+              <span>San Francisco</span>
+            </div>
+            <div class="card-socials__profiles">
+              <i class="fa-solid fa-link social"></i>
+              <span>http://github.blog</span>
+            </div>
+            <div class="twitter_name offline">
+              <i class="fa-brands fa-twitter social"></i>
+              <span id="availability">Not Available</span>
+            </div>
+            <div class="organisation">
+              <i class="fa-regular fa-building social"></i>
+              <span>@github</span>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
