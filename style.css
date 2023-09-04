@@ -136,7 +136,7 @@ h3 {
 }
 
 #handle {
-  padding: 0.4rem 0;
+  padding: 0.6rem 0;
   color: var(--clr-button);
 }
 
@@ -184,5 +184,26 @@ h3 {
 }
 
 .offline {
+  color: var(--clr-secondary-2);
+}
+
+.card-socials__profiles{
+  display: flex;
+  align-items: center;
+  flex: none;
+  /* gap: .6rem; */
+}
+
+#blog{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: white;
+  text-decoration: none;
+}
+
+#twitterHandle{
+  text-decoration: none;
+
   color: var(--clr-secondary-2);
 }
